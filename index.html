@@ -18,60 +18,66 @@
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
         <hr>
-        <h2>Contact Information</h2>
+
         <form>
-            <label for="fullname">Full Name</label>
-            <input type="text" name="user_fname" id="fullname" placeholder="Required" required /><br>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fullname">Full Name</label>
+                <input type="text" name="user_fname" id="fullname" placeholder="Required" required /><br>
 
-            <label for="email">Email Address</label>
-            <input type="email" name="user_email_name" id="email" placeholder="Required" required /><br>
+                <label for="email">Email Address</label>
+                <input type="email" name="user_email_name" id="email" placeholder="Required" required /><br>
 
-            <label for="phone">Phone Number</label>
-            <input type="number" name="user_phone" id="phone" /><br>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="user_phone" id="phone" /><br>
 
-            <label for="street">Street Address</label>
-            <input type="text" name="user_street" id="street" /><br>
+                <label for="street">Street Address</label>
+                <input type="text" name="user_street" id="street" /><br>
 
-            <label for="city">City</label>
-            <input type="text" name="user_city" id="city" /><br>
+                <label for="city">City</label>
+                <input type="text" name="user_city" id="city" /><br>
 
-            <label for="state">State</label>
-            <select id="state">
-                <option value="">Choose State</option>
-                <option value="california">California</option>
-                <option value="florida">Florida</option>
-                <option value="hawaii">Hawaii</option>
-                <option value="colorado">Colorado</option>
-            </select><br>
+                <label for="state">State</label>
+                <select id="state">
+                    <option value="">Choose State</option>
+                    <option value="california">California</option>
+                    <option value="florida">Florida</option>
+                    <option value="hawaii">Hawaii</option>
+                    <option value="colorado">Colorado</option>
+                </select><br>
 
-            <label for="zip">Zip Code</label>
-            <input type="text" name="user_zip" id="zip" />
+                <label for="zip">Zip Code</label>
+                <input type="text" name="user_zip" id="zip" maxlength="5" />
+
+                <hr>
+            </fieldset>
+            <fieldset>
+                <legend>Newsletter</legend>
+                <p>Select the newsletter you would like to receive</p>
+
+                <input type="checkbox" id="html" name="user_html" checked>
+                <label for="html">HTML News</label><br>
+
+                <input type="checkbox" id="css" name="user_css">
+                <label for="css">CSS News</label><br>
+
+                <input type="checkbox" id="javascript" name="user_javascript">
+                <label for="javascript">Javascript News</label>
+
+                <p>Newsletter format</p>
+
+                <input type="radio" id="nl_html" name="nl_format" checked>
+                <label for="nl_html">HTML</label><br>
+
+                <input type="radio" id="nl_plain" name="nl_format">
+                <label for="nl_plain">Plain text</label><br>
+
+                <label for="topics">Other topics you would like to hear about</label><br>
+                <textarea id="topics" name="topics" rows="5" wrap></textarea><br>
+
+                <button type="sumbit" value="Sign Up" formmethod="POST">Sign Up</button>
+            </fieldset>
         </form>
-        <hr>
-        <h2>Newsletter</h2>
-        <p>Select the newsletter you would like to receive</p>
-
-        <input type="checkbox" id="html" name="user_html" checked>
-        <label for="html">HTML News</label><br>
-
-        <input type="checkbox" id="css" name="user_css">
-        <label for="css">CSS News</label><br>
-
-        <input type="checkbox" id="javascript" name="user_javascript">
-        <label for="javascript">Javascript News</label>
-
-        <p>Newsletter format</p>
-
-        <input type="radio" id="nl_html" name="nl_format" checked>
-        <label for="nl_html">HTML</label><br>
-
-        <input type="radio" id="nl_plain" name="nl_format">
-        <label for="nl_plain">Plain text</label><br>
-
-        <label for="topics">Other topics you would like to hear about</label><br>
-        <textarea id="topics" name="topics" rows="5" wrap></textarea><br>
-
-        <button type="sumbit" value="Sign Up" formmethod="POST">Sign Up</button>
     </main>
     <footer>
         <span>Copyright The Code Review</span>
