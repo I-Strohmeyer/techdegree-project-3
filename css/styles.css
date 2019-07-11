@@ -1,12 +1,12 @@
 /* Base styles */
 
-/** {
+* {
     border: red 1px solid;
-}*/
+}
 
 main {
     padding: 15px;
-    color: #2d3945;
+    color: #46698b;
 }
 
 header {
@@ -25,6 +25,7 @@ h2,
 legend {
     padding-top: 10px;
     padding-bottom: 15px;
+    color: #2d3945;
 }
 
 h1 {
@@ -39,14 +40,19 @@ h2 {
 }
 
 .thick {
-    border-bottom: 3px solid #2d3945; 
+    border-bottom: 3px solid #2d3945;
 }
 
+p,
+footer {
+    color: #9da3a8;
+}
 
-/* Forms */
-
-form {
-    margin: 0 auto;
+footer {
+    font-style: italic;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 160px;
 }
 
 legend {
@@ -54,26 +60,37 @@ legend {
     font-weight: 700;
 }
 
+/* Forms */
 
+form {
+    margin: 0 auto;
+}
 
 .contact_information label {
     display: block;
     font-size: 16px;
-    padding: 10px 0;
+    padding: 18px 0 10px 0;
     font-weight: 200;
 }
 
-.contact_information input,
+.contact_information input {
+    padding: 16px 10px;
+    width: 100%;
+    margin-right: 10px;
+    display: block;
+}
+
+
 select,
 textarea {
-    width: 100%;
+    
     height: 40px;
 }
 
 input,
 textarea,
 select {
-    border-radius: 4px;
+    border-radius: 5px;
     background: #eff0f1;
     border: 1px solid #eff0f1;
 }
@@ -82,4 +99,24 @@ input:focus,
 textarea:focus,
 select:focus {
     border: 2px solid #46698b;
+}
+
+::placeholder {
+    opacity: 0.5;
+    text-align: right;
+    padding-right: 15px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* Button */
+
+button {
+    color: #ffffff;
+    background: #4ebbb5;
+    border-radius: 4px;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: 700; 
+    font-size: 18px;   
 }
