@@ -1,0 +1,85 @@
+/* Base styles */
+
+/** {
+    border: red 1px solid;
+}*/
+
+main {
+    padding: 15px;
+    color: #2d3945;
+}
+
+header {
+    color: #ffffff;
+    background: #2d3945;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.signup {
+    text-align: center;
+    
+}
+
+h2,
+legend {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.thick {
+    border-bottom: 3px solid #2d3945; 
+}
+
+
+/* Forms */
+
+form {
+    margin: 0 auto;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+.contact_information label {
+    display: block;
+    font-size: 16px;
+    padding: 10px 0;
+    font-weight: 200;
+}
+
+.contact_information input,
+select,
+textarea {
+    width: 100%;
+    height: 40px;
+}
+
+input,
+textarea,
+select {
+    border-radius: 4px;
+    background: #eff0f1;
+    border: 1px solid #eff0f1;
+}
+
+input:focus, 
+textarea:focus,
+select:focus {
+    border: 2px solid #46698b;
+}

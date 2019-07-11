@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -10,16 +10,19 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito|Oxygen" rel="stylesheet" />
 
 </head>
-<div class="container">
-    <header>
-        <h1>THE CODE REVIEW</h1>
-    </header>
-    <main>
+
+<header>
+    <h1>THE CODE REVIEW</h1>
+</header>
+<main>
+    <div class="signup">
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
+        <hr class="thick">
         <hr>
-
-        <form>
+    </div>
+    <form method="POST">
+        <div class="contact_information">
             <fieldset>
                 <legend>Contact Information</legend>
                 <label for="fullname">Full Name</label>
@@ -50,39 +53,41 @@
                 <input type="text" name="user_zip" id="zip" />
 
                 <hr>
+
             </fieldset>
-            <fieldset>
-                <legend>Newsletter</legend>
-                <p>Select the newsletter you would like to receive</p>
+        </div>
+        <fieldset>
+            <legend>Newsletter</legend>
+            <p>Select the newsletter you would like to receive</p>
 
-                <input type="checkbox" id="html" name="user_html" checked>
-                <label for="html">HTML News</label><br>
+            <input type="checkbox" id="html" name="user_html" checked>
+            <label for="html">HTML News</label><br>
 
-                <input type="checkbox" id="css" name="user_css">
-                <label for="css">CSS News</label><br>
+            <input type="checkbox" id="css" name="user_css">
+            <label for="css">CSS News</label><br>
 
-                <input type="checkbox" id="javascript" name="user_javascript">
-                <label for="javascript">Javascript News</label>
+            <input type="checkbox" id="javascript" name="user_javascript">
+            <label for="javascript">Javascript News</label>
 
-                <p>Newsletter format</p>
+            <p>Newsletter format</p>
 
-                <input type="radio" id="nl_html" name="nl_format" checked>
-                <label for="nl_html">HTML</label><br>
+            <input type="radio" id="nl_html" name="nl_format" checked>
+            <label for="nl_html">HTML</label><br>
 
-                <input type="radio" id="nl_plain" name="nl_format">
-                <label for="nl_plain">Plain text</label><br>
+            <input type="radio" id="nl_plain" name="nl_format">
+            <label for="nl_plain">Plain text</label><br>
 
-                <label for="topics">Other topics you would like to hear about</label><br>
-                <textarea id="topics" name="user_topics" rows="5" wrap></textarea><br>
+            <label for="topics">Other topics you would like to hear about</label><br>
+            <textarea id="topics" name="user_topics" rows="5" wrap></textarea><br>
 
-                <button type="sumbit" value="Sign Up" formmethod="POST">Sign Up</button>
-            </fieldset>
-        </form>
-    </main>
-    <footer>
-        <span>Copyright The Code Review</span>
-    </footer>
+            <button type="sumbit" value="Sign Up" formmethod="POST">Sign Up</button>
+        </fieldset>
+    </form>
+</main>
+<footer>
+    <span>Copyright The Code Review</span>
+</footer>
 
-</div>
+
 
 </html>
