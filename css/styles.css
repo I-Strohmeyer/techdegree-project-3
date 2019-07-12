@@ -27,6 +27,7 @@ legend {
   padding-top: 10px;
   padding-bottom: 15px;
   color: #2d3945;
+  font-weight: 700;
 }
 
 h1 {
@@ -36,11 +37,28 @@ h1 {
 
 h2 {
   font-size: 20px;
-  font-weight: 600;
+  
 }
 
-.thick {
-  border-bottom: 3px double #2d3945;
+legend {
+  font-size: 20px;
+  
+}
+
+p {
+  padding: 10px 0px;
+}
+
+hr.thick {
+  border: none;
+  border-bottom: 3px solid #2d3945;
+  margin: 0 0 3px 0;
+}
+
+hr {
+  border: none;
+  border-bottom: 2px solid #2d3945;
+  margin: 0;
 }
 
 .intro,
@@ -48,23 +66,18 @@ footer {
   color: #9da3a8;
 }
 
+.intro {
+  margin-bottom: 30px;
+}
+
 footer {
   font-style: italic;
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 160px;
+  padding-bottom: 180px;
 }
 
-legend {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-p {
-  padding: 10px 0px;
-}
-
-/* Forms */
+/* Form */
 
 form {
   margin: 0 auto;
@@ -99,7 +112,7 @@ select {
 }
 
 textarea {
-  margin-bottom: 25px;
+  margin: 20px 0;
 }
 
 input:focus,
@@ -115,8 +128,24 @@ select:focus {
   font-style: italic;
 }
 
+#state:invalid {
+  color: #787878;
+}
+:disabled {
+  color: #787878;
+}
+
+option:not(:first-child) {
+  color:black;
+}
+
 #zip {
   max-width: 160px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 10px 0;
 }
 
 /* Button */
@@ -130,4 +159,5 @@ button {
   font-weight: 700;
   font-size: 18px;
   border-style: none;
+  margin-top: 15px;
 }
