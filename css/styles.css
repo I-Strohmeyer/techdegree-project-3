@@ -70,6 +70,10 @@ footer {
   margin-bottom: 30px;
 }
 
+.seperator {
+  margin: 30px 0 25px 0;
+}
+
 footer {
   font-style: italic;
   text-align: center;
