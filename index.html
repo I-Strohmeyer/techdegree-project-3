@@ -59,24 +59,24 @@
             <legend>Newsletter</legend>
             <p>Select the newsletter you would like to receive</p>
 
-            <input type="checkbox" id="html" name="user_html" checked>
+            <input type="checkbox" id="html" name="user_news" value="user_html" checked>
             <label for="html">&nbsp;HTML News</label><br>
 
-            <input type="checkbox" id="css" name="user_css">
+            <input type="checkbox" id="css" name="user_news" value="user_css">
             <label for="css">&nbsp;CSS News</label><br>
 
-            <input type="checkbox" id="javascript" name="user_javascript">
+            <input type="checkbox" id="javascript" name="user_news" value="user_javascript">
             <label for="javascript">&nbsp;Javascript News</label>
 
             <p>Newsletter format</p>
 
-            <input type="radio" id="nl_html" name="nl_format" checked>
+            <input type="radio" id="nl_html" name="user_format" value="nl_format_html" checked>
             <label for="nl_html">&nbsp;HTML</label><br>
 
-            <input type="radio" id="nl_plain" name="nl_format">
+            <input type="radio" id="nl_plain" name="user_format" value="nl_format_plain">
             <label for="nl_plain">&nbsp;Plain text</label><br>
 
-            <label for="topics">Other topics you would like to hear about</label><br>
+            <label for="topics">Other topics you'd like to hear about</label><br>
             <textarea id="topics" name="user_topics" rows="5" wrap></textarea><br>
 
             <button type="sumbit" value="Sign Up" formmethod="POST">Sign Up</button>
