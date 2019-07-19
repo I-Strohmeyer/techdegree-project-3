@@ -30,6 +30,7 @@ legend {
   color: #2d3945;
   font-weight: 700;
   font-family: 'Merriweather', serif;
+  font-size: 20px;
 }
 
 .contact_information {
@@ -39,16 +40,6 @@ legend {
 h1 {
   font-weight: 600;
   font-size: 22px;
-}
-
-h2 {
-  font-size: 20px;
-  
-}
-
-legend {
-  font-size: 20px;
-  
 }
 
 p {
