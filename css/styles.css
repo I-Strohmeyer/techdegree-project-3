@@ -4,6 +4,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  font-family: 'Merriweather', serif;
 }
 
 main {
@@ -28,6 +29,10 @@ legend {
   padding-bottom: 15px;
   color: #2d3945;
   font-weight: 700;
+}
+
+.contact_information {
+  margin-top: 15px;
 }
 
 h1 {
@@ -165,4 +170,28 @@ button {
   font-size: 18px;
   border-style: none;
   margin-top: 15px;
+}
+
+/* Media query */
+
+@media (min-width: 768px) {
+  main {
+    max-width: 769px;
+    margin: 0 auto;
+  }
+  .contact_information br {
+    display: none;
+  }
+  .grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .contact_information label {
+    grid-column: 1 / 1;
+  }
+  .contact_information input,
+  .contact_information select {
+    grid-column: 2 / 5;
+  }
 }
