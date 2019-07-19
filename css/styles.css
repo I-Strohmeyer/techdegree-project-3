@@ -4,7 +4,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-family: 'Merriweather', serif;
+  
 }
 
 main {
@@ -29,6 +29,7 @@ legend {
   padding-bottom: 15px;
   color: #2d3945;
   font-weight: 700;
+  font-family: 'Merriweather', serif;
 }
 
 .contact_information {
