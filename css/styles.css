@@ -42,7 +42,7 @@ h1 {
 }
 
 p {
-  padding: 10px 0px;
+  padding: 15px 0px;
 }
 
 hr.thick {
@@ -64,7 +64,7 @@ footer {
 
 .intro,
 #nl_plain {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .seperator {
@@ -142,11 +142,12 @@ option:not(:first-child) {
 
 #zip {
   max-width: 160px;
+  margin-bottom: 15px;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  margin: 10px 0;
+.checkbox,
+.radio {
+  margin-bottom: 12px;
 }
 
 /* Button */
